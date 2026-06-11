@@ -1,0 +1,11 @@
+{
+  "owner": "aws-actions",
+  "repo": "stale-issue-cleanup",
+  "version": "v7.1.1",
+  "commit_sha": "0604f2edf84a3a66bc0dfb4a30eb07814cbdf440",
+  "url": "https://github.com/aws-actions/stale-issue-cleanup",
+  "policy_sha": "d636be7e43ef829af6e853da6b3c7566db9f72fe",
+  "test_policy_sha": "843adf9e4b8f85d0c08b27b9d0b09dd094b54702",
+  "test_agent_version": "1",
+  "harden_agent_version": "1"
+}

@@ -1,0 +1,27 @@
+name: Test advanced stale issue cleanup options
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - id: action
+        uses: .
+        with:
+          repo-token: ${{ github.token }}
+          issue-types: 'issues,pull_requests'
+          ancient-issue-message: 'This issue is ancient and has been open for over a year.'
+          ancient-pr-message: 'This PR is ancient and has been open for over a year.'
+          days-before-ancient: 360
+          exempt-issue-labels: 'pinned,security'
+          exempt-pr-labels: 'pinned,security'
+          response-requested-label: 'response-requested'
+          closed-for-staleness-label: 'closed-for-staleness'
+          minimum-upvotes-to-exempt: 5
+          use-created-date-for-ancient: 'true'
+          dry-run: 'true'
+      - name: Assert action completed
+        run: |
+          echo "Action completed successfully with advanced options in dry-run mode"
+          echo "PASS"
