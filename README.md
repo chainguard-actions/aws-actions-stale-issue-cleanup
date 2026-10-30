@@ -6,9 +6,9 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 
 ## Versions
 
-| Version | Tag | Upstream commit |
-|---------|-----|-----------------|
-| v7.1.1 | [`v7.1.1`](https://github.com/chainguard-actions/aws-actions-stale-issue-cleanup/tree/v7.1.1) | [`0604f2e`](https://github.com/aws-actions/stale-issue-cleanup/commit/0604f2edf84a3a66bc0dfb4a30eb07814cbdf440) |
+| Version | Tag | Upstream commit | Hardening report |
+|---------|-----|-----------------|------------------|
+| v7.1.1 | [`v7.1.1`](https://github.com/chainguard-actions/aws-actions-stale-issue-cleanup/tree/v7.1.1) | [`0604f2e`](https://github.com/aws-actions/stale-issue-cleanup/commit/0604f2edf84a3a66bc0dfb4a30eb07814cbdf440) | [`HARDENING.md`](https://github.com/chainguard-actions/aws-actions-stale-issue-cleanup/blob/v7.1.1/HARDENING.md) |
 
 ## Privacy
 
